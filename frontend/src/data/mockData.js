@@ -790,6 +790,83 @@ export const aiSolutions = [
     description: "AI platform for network detection and response, identifying attacker behaviors in real-time.",
     link: "https://www.vectra.ai",
     use_cases: ["Network monitoring", "Threat detection", "Attack investigation", "Security analytics"]
+  },
+  {
+    name: "AIaC",
+    category: "AI Infrastructure-as-Code",
+    description: "AI-powered Infrastructure-as-Code generator that creates Terraform, CloudFormation, Pulumi, Helm charts, and Dockerfiles from natural language descriptions.",
+    link: "https://github.com/gofireflyio/aiac",
+    use_cases: ["Infrastructure automation", "Terraform generation", "CloudFormation templates", "CI/CD pipelines", "Policy-as-code", "DevOps automation"]
+  },
+  {
+    name: "GitHub Copilot for CLI",
+    category: "AI Command Line Assistant",
+    description: "AI-powered command line assistant that suggests shell commands and explains complex CLI operations.",
+    link: "https://githubnext.com/projects/copilot-cli/",
+    use_cases: ["Command line assistance", "Shell scripting", "DevOps automation", "System administration"]
+  },
+  {
+    name: "Warp AI",
+    category: "AI Terminal",
+    description: "Modern terminal with built-in AI assistant for command suggestions, explanations, and workflow automation.",
+    link: "https://www.warp.dev",
+    use_cases: ["Terminal enhancement", "Command assistance", "Workflow automation", "Developer productivity"]
+  },
+  {
+    name: "Codeium",
+    category: "AI Code Assistant",
+    description: "Free AI-powered code completion and chat assistant supporting 70+ programming languages.",
+    link: "https://codeium.com",
+    use_cases: ["Code completion", "Multi-language support", "Code explanation", "Development assistance"]
+  },
+  {
+    name: "Amazon CodeWhisperer",
+    category: "AI Code Generator",
+    description: "Amazon's AI coding companion that generates code suggestions based on comments and existing code.",
+    link: "https://aws.amazon.com/codewhisperer/",
+    use_cases: ["AWS development", "Code generation", "Security scanning", "Enterprise coding"]
+  },
+  {
+    name: "Sourcegraph Cody",
+    category: "AI Code Assistant",
+    description: "AI coding assistant that understands your entire codebase for context-aware code generation and explanations.",
+    link: "https://sourcegraph.com/cody",
+    use_cases: ["Codebase understanding", "Code search", "Refactoring", "Documentation generation"]
+  },
+  {
+    name: "Mintlify",
+    category: "AI Documentation",
+    description: "AI-powered documentation platform that automatically generates and maintains technical documentation.",
+    link: "https://mintlify.com",
+    use_cases: ["API documentation", "Code documentation", "Technical writing", "Documentation maintenance"]
+  },
+  {
+    name: "Continue",
+    category: "AI Code Assistant",
+    description: "Open-source AI code assistant that integrates with VS Code and JetBrains IDEs.",
+    link: "https://continue.dev",
+    use_cases: ["IDE integration", "Code completion", "Chat assistance", "Custom AI models"]
+  },
+  {
+    name: "Sweep AI",
+    category: "AI Code Reviewer",
+    description: "AI junior developer that turns GitHub issues into pull requests automatically.",
+    link: "https://sweep.dev",
+    use_cases: ["Automated pull requests", "Issue resolution", "Code maintenance", "GitHub automation"]
+  },
+  {
+    name: "Wasp",
+    category: "AI Full-Stack Generator",
+    description: "AI-powered full-stack web app generator that creates React, Node.js, and database applications from natural language.",
+    link: "https://wasp-lang.dev",
+    use_cases: ["Full-stack development", "Web app generation", "Rapid prototyping", "Application scaffolding"]
+  },
+  {
+    name: "Cursor Composer",
+    category: "AI Code Editor",
+    description: "Advanced AI code editor with multi-file editing, codebase understanding, and autonomous coding capabilities.",
+    link: "https://cursor.com",
+    use_cases: ["Multi-file editing", "Codebase refactoring", "Autonomous coding", "Large-scale changes"]
   }
 ];
 
