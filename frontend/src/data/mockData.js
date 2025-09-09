@@ -801,13 +801,18 @@ export const mockAIRecommendation = (problemStatement) => {
     // Music & Audio Context
     {
       context: ['music', 'soundtrack', 'background', 'royalty'],
-      solutions: ['Soundraw', 'Soundful', 'AIVA'],
+      solutions: ['Soundraw', 'Udio', 'Suno AI'],
       priority: 'background_music'
     },
     {
       context: ['music', 'compose', 'original', 'film', 'game'],
-      solutions: ['AIVA', 'Soundful', 'Soundraw'],
+      solutions: ['AIVA', 'Udio', 'Suno AI'],
       priority: 'music_composition'
+    },
+    {
+      context: ['song', 'lyrics', 'vocal', 'complete'],
+      solutions: ['Suno AI', 'Udio', 'AIVA'],
+      priority: 'full_song_creation'
     },
     {
       context: ['voice', 'speech', 'narration', 'audiobook'],
