@@ -447,6 +447,69 @@ export const aiSolutions = [
     description: "AI writing assistant for creating various types of content quickly and efficiently.",
     link: "https://rytr.me",
     use_cases: ["Blog posts", "Ad copy", "Email content", "Social media posts"]
+  },
+  {
+    name: "TripIt",
+    category: "AI Travel Planning",
+    description: "AI-powered travel organizer that creates detailed itineraries from your bookings and emails.",
+    link: "https://www.tripit.com",
+    use_cases: ["Trip organization", "Itinerary planning", "Travel management", "Flight tracking"]
+  },
+  {
+    name: "Kayak",
+    category: "AI Travel Search",
+    description: "AI-powered travel search engine for finding flights, hotels, and travel deals with price predictions.",
+    link: "https://www.kayak.com",
+    use_cases: ["Flight booking", "Hotel search", "Travel deals", "Price predictions"]
+  },
+  {
+    name: "Google Travel",
+    category: "AI Trip Planning",
+    description: "Google's AI-powered travel planning tool for discovering destinations, hotels, and activities.",
+    link: "https://travel.google.com",
+    use_cases: ["Destination research", "Hotel booking", "Activity planning", "Travel inspiration"]
+  },
+  {
+    name: "Hopper",
+    category: "AI Travel Predictions",
+    description: "AI app that predicts flight and hotel prices to help you book at the best time.",
+    link: "https://www.hopper.com",
+    use_cases: ["Price predictions", "Flight booking", "Hotel deals", "Travel timing"]
+  },
+  {
+    name: "Expedia",
+    category: "AI Travel Booking",
+    description: "AI-enhanced travel booking platform with personalized recommendations and virtual assistant.",
+    link: "https://www.expedia.com",
+    use_cases: ["Hotel booking", "Flight booking", "Package deals", "Travel recommendations"]
+  },
+  {
+    name: "Booking.com AI",
+    category: "AI Hotel Search",
+    description: "AI-powered hotel search and booking with personalized recommendations and reviews analysis.",
+    link: "https://www.booking.com",
+    use_cases: ["Hotel search", "Accommodation booking", "Review analysis", "Location recommendations"]
+  },
+  {
+    name = "Airbnb",
+    category: "AI Travel Accommodation",
+    description: "AI-powered platform for finding unique accommodations with personalized search and recommendations.",
+    link: "https://www.airbnb.com",
+    use_cases: ["Vacation rentals", "Unique stays", "Local experiences", "Host matching"]
+  },
+  {
+    name: "Rome2Rio",
+    category: "AI Travel Route Planning",
+    description: "AI travel planning tool that finds the best routes and transportation options between destinations.",
+    link: "https://www.rome2rio.com",
+    use_cases: ["Route planning", "Transportation options", "Multi-modal travel", "Cost comparison"]
+  },
+  {
+    name: "TripAdvisor",
+    category: "AI Travel Reviews",
+    description: "AI-enhanced travel platform with intelligent review analysis and personalized recommendations.",
+    link: "https://www.tripadvisor.com",
+    use_cases: ["Destination research", "Restaurant recommendations", "Activity planning", "Review insights"]
   }
 ];
 
