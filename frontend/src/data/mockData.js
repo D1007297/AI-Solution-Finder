@@ -733,13 +733,18 @@ export const mockAIRecommendation = (problemStatement) => {
     // Code Development Context
     {
       context: ['code', 'programming', 'development', 'software'],
-      solutions: ['GitHub Copilot', 'Cursor AI', 'Replit Ghostwriter'],
+      solutions: ['GitHub Copilot', 'DeepSeek Coder', 'Cursor AI'],
       priority: 'coding'
     },
     {
       context: ['code', 'learning', 'beginner', 'tutorial'],
-      solutions: ['Replit Ghostwriter', 'Caktus AI', 'GitHub Copilot'],
+      solutions: ['Replit Ghostwriter', 'DeepSeek Coder', 'GitHub Copilot'],
       priority: 'code_learning'
+    },
+    {
+      context: ['algorithm', 'complex', 'advanced', 'performance'],
+      solutions: ['DeepSeek Coder', 'GitHub Copilot', 'Claude Artifacts'],
+      priority: 'advanced_coding'
     },
     
     // Research Context
