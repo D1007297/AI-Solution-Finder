@@ -671,7 +671,7 @@ export const mockAIRecommendation = (problemStatement) => {
   }
 
   // Get top 2-3 matching solutions
-  const topSolutions = matchedSolutions.slice(0, 3);
+  const topSolutions = finalSolutions.slice(0, 3);
   const recommendedSolutions = topSolutions.map(solutionName => {
     return aiSolutions.find(sol => sol.name === solutionName);
   }).filter(Boolean); // Remove any undefined solutions
