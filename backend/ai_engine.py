@@ -14,9 +14,10 @@ logger = logging.getLogger(__name__)
 
 class AIRecommendationEngine:
     def __init__(self):
-        self.api_key = os.getenv('EMERGENT_LLM_KEY')
+        # Use the exact key from emergent_integrations_manager
+        self.api_key = "sk-emergent-cD9899fF097Ea04B75"
         if not self.api_key:
-            raise ValueError("EMERGENT_LLM_KEY not found in environment variables")
+            raise ValueError("EMERGENT_LLM_KEY not found")
         
         self.system_message = """You are an expert AI Solution Finder that helps users discover the perfect AI tools for their specific needs.
 
