@@ -342,6 +342,13 @@ export const aiSolutions = [
     description: "AI meeting recorder and note-taker that summarizes calls automatically.",
     link: "https://fathom.video",
     use_cases: ["Meeting summaries", "Call recording", "Team collaboration", "CRM integration"]
+  },
+  {
+    name: "Eraser.io",
+    category: "AI Diagram & Architecture Tool",
+    description: "AI-powered diagramming tool for creating cloud architecture, system designs, and technical diagrams with intelligent suggestions.",
+    link: "https://www.eraser.io",
+    use_cases: ["Cloud architecture diagrams", "System design", "Technical documentation", "Visio alternatives", "Infrastructure diagrams"]
   }
 ];
 
