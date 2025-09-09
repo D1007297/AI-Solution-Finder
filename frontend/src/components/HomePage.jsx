@@ -239,16 +239,16 @@ const HomePage = () => {
                         <div className="flex space-x-2">
                           <Button
                             size="sm"
-                            variant={feedback === `up-${index}` ? 'default' : 'outline'}
-                            onClick={() => handleFeedback(`up-${index}`)}
+                            variant={feedback[`${recommendation.name}-${recommendation.rank}`] === 'up' ? 'default' : 'outline'}
+                            onClick={() => handleFeedback(recommendation.name, 'up', recommendation.rank)}
                             className="h-8"
                           >
                             <ThumbsUp className="h-3 w-3" />
                           </Button>
                           <Button
                             size="sm"
-                            variant={feedback === `down-${index}` ? 'default' : 'outline'}
-                            onClick={() => handleFeedback(`down-${index}`)}
+                            variant={feedback[`${recommendation.name}-${recommendation.rank}`] === 'down' ? 'default' : 'outline'}
+                            onClick={() => handleFeedback(recommendation.name, 'down', recommendation.rank)}
                             className="h-8"
                           >
                             <ThumbsDown className="h-3 w-3" />
