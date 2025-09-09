@@ -349,6 +349,104 @@ export const aiSolutions = [
     description: "AI-powered diagramming tool for creating cloud architecture, system designs, and technical diagrams with intelligent suggestions.",
     link: "https://www.eraser.io",
     use_cases: ["Cloud architecture diagrams", "System design", "Technical documentation", "Visio alternatives", "Infrastructure diagrams"]
+  },
+  {
+    name: "Tome",
+    category: "AI Storytelling & Presentations",
+    description: "AI-powered storytelling platform that creates presentations and narratives from simple prompts.",
+    link: "https://tome.app",
+    use_cases: ["Story presentations", "Pitch decks", "Educational content", "Creative storytelling"]
+  },
+  {
+    name: "Replit Ghostwriter",
+    category: "AI Code Assistant",
+    description: "AI programming assistant integrated into Replit IDE for real-time coding help and debugging.",
+    link: "https://replit.com/site/ghostwriter",
+    use_cases: ["Live coding assistance", "Debugging", "Code explanation", "Learning programming"]
+  },
+  {
+    name: "Cursor AI",
+    category: "AI Code Editor",
+    description: "AI-first code editor with advanced code completion and refactoring capabilities.",
+    link: "https://cursor.com",
+    use_cases: ["Code editing", "Refactoring", "Code generation", "AI pair programming"]
+  },
+  {
+    name: "Perplexity Pro",
+    category: "AI Research Assistant",
+    description: "Advanced AI research tool with real-time web access and citation capabilities.",
+    link: "https://pro.perplexity.ai",
+    use_cases: ["Academic research", "Market research", "Fact verification", "Detailed analysis"]
+  },
+  {
+    name: "Claude Pro",
+    category: "Advanced AI Assistant",
+    description: "Premium version of Claude with extended capabilities for complex reasoning and analysis.",
+    link: "https://claude.ai/pro",
+    use_cases: ["Complex analysis", "Long-form writing", "Advanced reasoning", "Professional tasks"]
+  },
+  {
+    name: "Scrivener + AI",
+    category: "AI Writing Software",
+    description: "Professional writing software enhanced with AI for long-form content creation.",
+    link: "https://www.literatureandlatte.com/scrivener/overview",
+    use_cases: ["Book writing", "Academic papers", "Long-form content", "Research organization"]
+  },
+  {
+    name: "Jasper Art",
+    category: "AI Art Generation",
+    description: "AI art generator focused on marketing and commercial artwork creation.",
+    link: "https://www.jasper.ai/art",
+    use_cases: ["Marketing art", "Social media graphics", "Blog illustrations", "Commercial design"]
+  },
+  {
+    name: "Brandmark",
+    category: "AI Logo Design",
+    description: "AI-powered logo and brand identity generator for businesses.",
+    link: "https://brandmark.io",
+    use_cases: ["Logo design", "Brand identity", "Business cards", "Brand assets"]
+  },
+  {
+    name: "Lex",
+    category: "AI Writing Assistant",
+    description: "AI-powered writing tool designed specifically for authors and creative writers.",
+    link: "https://lex.page",
+    use_cases: ["Creative writing", "Novel writing", "Screenplay writing", "Author assistance"]
+  },
+  {
+    name: "Tome AI",
+    category: "AI Document Creation",
+    description: "AI tool for creating comprehensive documents, reports, and presentations.",
+    link: "https://tome.app",
+    use_cases: ["Business reports", "Documentation", "Presentations", "Content creation"]
+  },
+  {
+    name: "Soundful",
+    category: "AI Music Production",
+    description: "AI music generator for creating royalty-free tracks with advanced customization.",
+    link: "https://soundful.com",
+    use_cases: ["Background music", "Podcast intros", "Video soundtracks", "Custom compositions"]
+  },
+  {
+    name: "AIVA",
+    category: "AI Music Composer",
+    description: "AI composer for creating original music for films, games, and commercial use.",
+    link: "https://www.aiva.ai",
+    use_cases: ["Film scoring", "Game music", "Commercial jingles", "Classical compositions"]
+  },
+  {
+    name: "Rephrase.ai",
+    category: "AI Video Personalization",
+    description: "AI platform for creating personalized videos with AI avatars and voiceovers.",
+    link: "https://www.rephrase.ai",
+    use_cases: ["Personalized marketing", "Customer engagement", "Training videos", "Sales outreach"]
+  },
+  {
+    name: "Rytr",
+    category: "AI Content Writing",
+    description: "AI writing assistant for creating various types of content quickly and efficiently.",
+    link: "https://rytr.me",
+    use_cases: ["Blog posts", "Ad copy", "Email content", "Social media posts"]
   }
 ];
 
