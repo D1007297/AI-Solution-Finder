@@ -80,16 +80,25 @@ Always return exactly 2-3 recommendations ranked by relevance."""
             user_message = UserMessage(text=user_prompt)
             
             # Get AI response
+            logger.info("Sending message to AI engine...")
             response = await chat.send_message(user_message)
+            logger.info(f"AI response received: {response[:200]}...")
             
             # Parse and validate response
             recommendations = self._parse_ai_response(response, solutions_dataset)
             
-            return recommendations
+            if recommendations:
+                logger.info(f"Successfully generated {len(recommendations)} AI recommendations")
+                return recommendations
+            else:
+                logger.warning("AI response parsing failed, using fallback")
+                return self._fallback_recommendations(problem_statement, solutions_dataset)
             
         except Exception as e:
             logger.error(f"Error getting AI recommendations: {str(e)}")
+            logger.error(f"Error type: {type(e).__name__}")
             # Fallback to simple matching
+            logger.info("Using fallback recommendation system")
             return self._fallback_recommendations(problem_statement, solutions_dataset)
 
     def _create_analysis_prompt(
