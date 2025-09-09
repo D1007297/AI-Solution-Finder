@@ -795,11 +795,12 @@ export const mockAIRecommendation = (problemStatement) => {
 
   // If no matches found, provide contextual fallback based on problem type
   if (finalSolutions.length === 0) {
-    if (problem.includes('write')) finalSolutions = ['Jasper AI', 'Claude Pro', 'Grammarly'];
+    if (problem.includes('write')) finalSolutions = ['ChatGPT', 'Jasper AI', 'Claude Pro'];
     else if (problem.includes('image') || problem.includes('visual')) finalSolutions = ['DALL-E 3', 'MidJourney', 'Adobe Firefly'];
     else if (problem.includes('data') || problem.includes('analysis')) finalSolutions = ['Claude Pro', 'Perplexity Pro', 'Google Gemini'];
-    else if (problem.includes('business') || problem.includes('professional')) finalSolutions = ['Claude Pro', 'Microsoft Copilot', 'Perplexity Pro'];
-    else finalSolutions = ['Google Gemini', 'Claude Pro', 'Perplexity AI']; // Intelligent general-purpose fallback
+    else if (problem.includes('business') || problem.includes('professional')) finalSolutions = ['Claude Pro', 'Microsoft Copilot', 'ChatGPT'];
+    else if (problem.includes('question') || problem.includes('help') || problem.includes('learn')) finalSolutions = ['ChatGPT', 'Google Gemini', 'Claude Pro'];
+    else finalSolutions = ['ChatGPT', 'Google Gemini', 'Claude Pro']; // Balanced general-purpose fallback
   }
 
   // Get top 2-3 matching solutions
