@@ -174,6 +174,55 @@ export const aiSolutions = [
     description: "Records, transcribes, and summarizes meetings.",
     link: "https://fireflies.ai",
     use_cases: ["Team collaboration", "Project tracking", "Knowledge sharing"]
+  },
+  {
+    name: "Microsoft Copilot",
+    category: "Microsoft Office AI Assistant",
+    description: "AI assistant integrated across Microsoft 365 apps - Word, Excel, PowerPoint, Outlook, and Teams.",
+    link: "https://copilot.microsoft.com",
+    use_cases: ["Document creation", "Data analysis", "Presentation design", "Email drafting", "Meeting summaries"]
+  },
+  {
+    name: "Microsoft Copilot Pro",
+    category: "Microsoft Office AI Assistant",
+    description: "Advanced AI features for Microsoft 365 with priority access and enhanced capabilities.",
+    link: "https://copilot.microsoft.com/pro",
+    use_cases: ["Advanced Excel formulas", "PowerPoint design", "Word document automation", "Priority AI access"]
+  },
+  {
+    name: "Microsoft Designer",
+    category: "AI Design Tool",
+    description: "AI-powered design tool for creating graphics, presentations, and social media content.",
+    link: "https://designer.microsoft.com",
+    use_cases: ["Social media graphics", "Presentation slides", "Marketing materials", "Brand assets"]
+  },
+  {
+    name: "Azure OpenAI Service",
+    category: "Enterprise AI Platform",
+    description: "Enterprise-grade OpenAI models with Microsoft Azure security and compliance.",
+    link: "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
+    use_cases: ["Custom AI applications", "Enterprise chatbots", "Content generation", "Code assistance"]
+  },
+  {
+    name: "Microsoft Viva Sales",
+    category: "AI Sales Assistant",
+    description: "AI-powered CRM integration with Microsoft 365 for sales productivity.",
+    link: "https://www.microsoft.com/en-us/microsoft-viva/sales",
+    use_cases: ["CRM integration", "Sales insights", "Email tracking", "Pipeline management"]
+  },
+  {
+    name: "Microsoft Power Platform AI",
+    category: "Low-Code AI Platform",
+    description: "AI Builder for creating intelligent apps and automations without coding.",
+    link: "https://powerapps.microsoft.com/en-us/ai-builder/",
+    use_cases: ["Business process automation", "Form processing", "Object detection", "Sentiment analysis"]
+  },
+  {
+    name: "Microsoft Bing Chat",
+    category: "AI Search & Chat",
+    description: "AI-powered search and conversational assistant integrated with Bing.",
+    link: "https://www.bing.com/chat",
+    use_cases: ["Web search", "Research assistance", "Creative writing", "Code help"]
   }
 ];
 
