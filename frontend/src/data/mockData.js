@@ -1252,6 +1252,75 @@ export const mockAIRecommendation = (problemStatement) => {
       context: ['inference', 'real', 'time', 'fast'],
       solutions: ['Groq', 'Cerebras', 'Claude Pro'],
       priority: 'fast_inference'
+    },
+    
+    // DevOps & Infrastructure Context
+    {
+      context: ['infrastructure', 'terraform', 'cloudformation', 'iac'],
+      solutions: ['AIaC', 'GitHub Copilot', 'Amazon CodeWhisperer'],
+      priority: 'infrastructure_as_code'
+    },
+    {
+      context: ['devops', 'deployment', 'pipeline', 'cicd'],
+      solutions: ['AIaC', 'GitHub Copilot for CLI', 'Amazon CodeWhisperer'],
+      priority: 'devops_automation'
+    },
+    {
+      context: ['docker', 'kubernetes', 'helm', 'container'],
+      solutions: ['AIaC', 'GitHub Copilot', 'Amazon CodeWhisperer'],
+      priority: 'containerization'
+    },
+    {
+      context: ['shell', 'script', 'command', 'terminal'],
+      solutions: ['GitHub Copilot for CLI', 'Warp AI', 'AIaC'],
+      priority: 'shell_automation'
+    },
+    {
+      context: ['aws', 'cloud', 'amazon', 'ec2'],
+      solutions: ['Amazon CodeWhisperer', 'AIaC', 'GitHub Copilot'],
+      priority: 'aws_development'
+    },
+    {
+      context: ['pulumi', 'policy', 'governance', 'compliance'],
+      solutions: ['AIaC', 'Amazon CodeWhisperer', 'Sourcegraph Cody'],
+      priority: 'policy_as_code'
+    },
+    
+    // Development Tools Context
+    {
+      context: ['ide', 'vscode', 'editor', 'development'],
+      solutions: ['Continue', 'Cursor Composer', 'Sourcegraph Cody'],
+      priority: 'ide_integration'
+    },
+    {
+      context: ['documentation', 'docs', 'api', 'technical'],
+      solutions: ['Mintlify', 'Sourcegraph Cody', 'Continue'],
+      priority: 'documentation_generation'
+    },
+    {
+      context: ['github', 'pull', 'request', 'issue'],
+      solutions: ['Sweep AI', 'GitHub Copilot', 'Sourcegraph Cody'],
+      priority: 'github_automation'
+    },
+    {
+      context: ['codebase', 'refactor', 'large', 'scale'],
+      solutions: ['Sourcegraph Cody', 'Cursor Composer', 'Sweep AI'],
+      priority: 'codebase_management'
+    },
+    {
+      context: ['full', 'stack', 'web', 'app', 'react'],
+      solutions: ['Wasp', 'Cursor Composer', 'GitHub Copilot'],
+      priority: 'fullstack_development'
+    },
+    {
+      context: ['free', 'open', 'source', 'alternative'],
+      solutions: ['Continue', 'Codeium', 'Sweep AI'],
+      priority: 'free_dev_tools'
+    },
+    {
+      context: ['terminal', 'cli', 'command', 'productivity'],
+      solutions: ['Warp AI', 'GitHub Copilot for CLI', 'Continue'],
+      priority: 'terminal_enhancement'
     }
   ];
 
