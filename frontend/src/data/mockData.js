@@ -608,6 +608,69 @@ export const aiSolutions = [
     description: "Claude API platform for developers to build AI applications and integrations.",
     link: "https://console.anthropic.com",
     use_cases: ["AI app development", "API integration", "Custom AI solutions", "Enterprise AI"]
+  },
+  {
+    name: "ToonMe",
+    category: "AI Cartoon Generator",
+    description: "AI tool that transforms photos into cartoon-style illustrations and avatars.",
+    link: "https://toonme.com",
+    use_cases: ["Photo to cartoon", "Avatar creation", "Profile pictures", "Social media content"]
+  },
+  {
+    name: "Cartoonify",
+    category: "AI Cartoon Generator",
+    description: "AI-powered tool for converting photos and images into cartoon-style artwork.",
+    link: "https://cartoonify.de",
+    use_cases: ["Photo cartoonization", "Art style transfer", "Character design", "Creative projects"]
+  },
+  {
+    name: "DoodleLabs AI",
+    category: "AI Cartoon Generator",
+    description: "Advanced AI platform for creating cartoon-style images and illustrations from text or photos.",
+    link: "https://doodlelabs.ai",
+    use_cases: ["Cartoon creation", "Illustration design", "Character art", "Marketing graphics"]
+  },
+  {
+    name: "Adobe Character Animator",
+    category: "AI Animation Tool",
+    description: "AI-powered real-time animation via webcam with lip-sync and expression tracking, integrated with Adobe Creative Cloud.",
+    link: "https://www.adobe.com/products/character-animator.html",
+    use_cases: ["Real-time animation", "Webcam animation", "Lip-sync", "Expression tracking", "Live streaming"]
+  },
+  {
+    name: "Reelmind",
+    category: "AI Animation Tool",
+    description: "AI animation tool that cuts production time by up to 70%, powerful for storytelling and longer animations.",
+    link: "https://reelmind.com",
+    use_cases: ["Story animation", "Production efficiency", "Long-form animation", "Professional animation"]
+  },
+  {
+    name: "ToonCrafter",
+    category: "AI Animation Tool",
+    description: "OpenAI's tool focusing on 2D cartoon style transfer and animation creation.",
+    link: "https://tooncrafter.com",
+    use_cases: ["2D cartoon style", "Style transfer", "Animation creation", "Cartoon effects"]
+  },
+  {
+    name: "DeepMotion",
+    category: "AI 3D Animation",
+    description: "AI platform for realistic 3D character rigging and motion capture without traditional setups.",
+    link: "https://www.deepmotion.com",
+    use_cases: ["3D character rigging", "Motion capture", "3D animation", "Character movement"]
+  },
+  {
+    name: "Animaker",
+    category: "AI Animation Platform",
+    description: "Web-based, beginner-friendly tool for creating animated videos and presentations.",
+    link: "https://www.animaker.com",
+    use_cases: ["Animated videos", "Presentations", "Educational content", "Marketing animations"]
+  },
+  {
+    name: "Pixvers AI",
+    category: "AI Animation Tool",
+    description: "AI tool for quick 2D animations with customizable templates and real-time editing.",
+    link: "https://pixvers.com",
+    use_cases: ["Quick 2D animation", "Template-based animation", "Real-time editing", "Social media videos"]
   }
 ];
 
