@@ -392,7 +392,16 @@ export const mockAIRecommendation = (problemStatement) => {
     'adobe': ['Adobe Firefly'],
     'canva': ['Canva Magic Studio'],
     'enhance': ['Topaz AI'],
-    'upscale': ['Topaz AI']
+    'upscale': ['Topaz AI'],
+    'diagram': ['Eraser.io'],
+    'visio': ['Eraser.io'],
+    'architecture': ['Eraser.io'],
+    'cloud': ['Eraser.io'],
+    'system': ['Eraser.io'],
+    'technical': ['Eraser.io', 'GitHub Copilot'],
+    'infrastructure': ['Eraser.io'],
+    'flowchart': ['Eraser.io'],
+    'wireframe': ['Eraser.io']
   };
 
   // Check for exclusions (like "not Synthesia")
