@@ -510,6 +510,104 @@ export const aiSolutions = [
     description: "AI-enhanced travel platform with intelligent review analysis and personalized recommendations.",
     link: "https://www.tripadvisor.com",
     use_cases: ["Destination research", "Restaurant recommendations", "Activity planning", "Review insights"]
+  },
+  {
+    name: "Meta AI",
+    category: "Conversational AI",
+    description: "Meta's AI assistant integrated across Facebook, Instagram, and WhatsApp for conversations and content creation.",
+    link: "https://www.meta.ai",
+    use_cases: ["Social media assistance", "Content creation", "General conversations", "Image generation"]
+  },
+  {
+    name: "Grok",
+    category: "Conversational AI",
+    description: "X (Twitter)'s AI assistant with real-time information access and witty personality.",
+    link: "https://grok.x.ai",
+    use_cases: ["Real-time news", "Social media insights", "Current events", "Humorous conversations"]
+  },
+  {
+    name: "DeepSeek Coder",
+    category: "AI Code Assistant",
+    description: "Advanced AI coding assistant with strong performance in programming tasks and code generation.",
+    link: "https://www.deepseek.com",
+    use_cases: ["Code generation", "Programming help", "Algorithm design", "Code debugging"]
+  },
+  {
+    name: "Character.AI",
+    category: "AI Character Chat",
+    description: "Platform for chatting with AI characters and creating custom AI personalities.",
+    link: "https://character.ai",
+    use_cases: ["Entertainment", "Roleplay", "Creative writing", "Character interaction"]
+  },
+  {
+    name: "Pi AI",
+    category: "Personal AI Assistant",
+    description: "Inflection AI's personal assistant focused on supportive and empathetic conversations.",
+    link: "https://pi.ai",
+    use_cases: ["Personal support", "Emotional conversations", "Life advice", "Friendly chat"]
+  },
+  {
+    name: "Poe by Quora",
+    category: "Multi-AI Platform",
+    description: "Access multiple AI models (GPT-4, Claude, Gemini) in one platform with custom bots.",
+    link: "https://poe.com",
+    use_cases: ["Multiple AI access", "Custom bots", "AI comparison", "Specialized assistants"]
+  },
+  {
+    name: "Leonardo.ai",
+    category: "AI Art Generation",
+    description: "Advanced AI art generator with fine-tuned models for different art styles and commercial use.",
+    link: "https://leonardo.ai",
+    use_cases: ["Professional artwork", "Game assets", "Concept art", "Commercial graphics"]
+  },
+  {
+    name: "Ideogram",
+    category: "AI Text-to-Image",
+    description: "AI image generator excelling at text rendering within images and creative designs.",
+    link: "https://ideogram.ai",
+    use_cases: ["Text in images", "Logo design", "Typography art", "Creative graphics"]
+  },
+  {
+    name: "Flux AI",
+    category: "AI Image Generation",
+    description: "Open-source image generation model with high-quality outputs and creative flexibility.",
+    link: "https://flux-ai.io",
+    use_cases: ["High-quality images", "Creative art", "Professional graphics", "Open-source projects"]
+  },
+  {
+    name: "Udio",
+    category: "AI Music Generation",
+    description: "AI music generator for creating full songs with lyrics and various musical styles.",
+    link: "https://www.udio.com",
+    use_cases: ["Full song creation", "Music with lyrics", "Various genres", "Professional music"]
+  },
+  {
+    name: "Suno AI",
+    category: "AI Music Generation",
+    description: "AI platform for creating complete songs with vocals and instrumentals from text prompts.",
+    link: "https://suno.com",
+    use_cases: ["Song creation", "Music with vocals", "Custom compositions", "Audio content"]
+  },
+  {
+    name: "Claude Artifacts",
+    category: "AI Code & Content",
+    description: "Claude's advanced feature for creating interactive content, websites, and applications.",
+    link: "https://claude.ai",
+    use_cases: ["Interactive content", "Web development", "App prototypes", "Data visualization"]
+  },
+  {
+    name: "Perplexity Pages",
+    category: "AI Content Creation",
+    description: "Create comprehensive articles and research pages with AI-powered content generation.",
+    link: "https://www.perplexity.ai/pages",
+    use_cases: ["Research articles", "Content pages", "Educational content", "In-depth analysis"]
+  },
+  {
+    name: "Anthropic Console",
+    category: "AI Development Platform",
+    description: "Claude API platform for developers to build AI applications and integrations.",
+    link: "https://console.anthropic.com",
+    use_cases: ["AI app development", "API integration", "Custom AI solutions", "Enterprise AI"]
   }
 ];
 
