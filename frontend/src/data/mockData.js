@@ -671,6 +671,125 @@ export const aiSolutions = [
     description: "AI tool for quick 2D animations with customizable templates and real-time editing.",
     link: "https://pixvers.com",
     use_cases: ["Quick 2D animation", "Template-based animation", "Real-time editing", "Social media videos"]
+  },
+  {
+    name: "LLaMA 2",
+    category: "Open Source LLM",
+    description: "Meta's open-source large language model for research and commercial applications.",
+    link: "https://llama.meta.com",
+    use_cases: ["Research projects", "Custom AI applications", "Code generation", "Text analysis"]
+  },
+  {
+    name: "Code Llama",
+    category: "AI Code Generator",
+    description: "Specialized version of LLaMA 2 optimized for code generation and programming tasks.",
+    link: "https://ai.meta.com/blog/code-llama-large-language-model-coding/",
+    use_cases: ["Code generation", "Programming assistance", "Code completion", "Development automation"]
+  },
+  {
+    name: "AutoGPT",
+    category: "Autonomous AI Agent",
+    description: "Open-source autonomous AI agent that can perform complex tasks by chaining multiple actions.",
+    link: "https://github.com/Significant-Gravitas/AutoGPT",
+    use_cases: ["Task automation", "Research automation", "Multi-step workflows", "Autonomous problem solving"]
+  },
+  {
+    name: "LangChain",
+    category: "AI Framework",
+    description: "Framework for developing applications powered by language models with chaining capabilities.",
+    link: "https://langchain.com",
+    use_cases: ["LLM application development", "Workflow orchestration", "AI agent creation", "Document processing"]
+  },
+  {
+    name: "Haystack",
+    category: "AI Search Framework",
+    description: "Open-source framework for building search systems and question-answering applications.",
+    link: "https://haystack.deepset.ai",
+    use_cases: ["Document search", "Question answering", "Information retrieval", "Knowledge management"]
+  },
+  {
+    name: "DeepFaceLab",
+    category: "AI Face Synthesis",
+    description: "Open-source deepfake software for face swapping and facial reenactment research.",
+    link: "https://github.com/iperov/DeepFaceLab",
+    use_cases: ["Film production", "Research purposes", "Digital effects", "Content creation"]
+  },
+  {
+    name: "FaceFusion",
+    category: "AI Face Synthesis",
+    description: "Advanced face swapping and deepfake creation tool with real-time capabilities.",
+    link: "https://github.com/facefusion/facefusion",
+    use_cases: ["Video editing", "Digital effects", "Content creation", "Research applications"]
+  },
+  {
+    name: "Bark",
+    category: "AI Voice Generation",
+    description: "Open-source text-to-audio model that can generate speech, music, and sound effects.",
+    link: "https://github.com/suno-ai/bark",
+    use_cases: ["Voice synthesis", "Audio content creation", "Podcast production", "Accessibility tools"]
+  },
+  {
+    name: "Coqui TTS",
+    category: "AI Text-to-Speech",
+    description: "Open-source text-to-speech toolkit with voice cloning and multilingual support.",
+    link: "https://coqui.ai",
+    use_cases: ["Voice cloning", "Multilingual TTS", "Accessibility", "Audio book creation"]
+  },
+  {
+    name: "OpenAI Whisper",
+    category: "AI Speech Recognition",
+    description: "OpenAI's automatic speech recognition system with multilingual transcription capabilities.",
+    link: "https://openai.com/research/whisper",
+    use_cases: ["Speech transcription", "Audio analysis", "Subtitle generation", "Voice note conversion"]
+  },
+  {
+    name: "AFL++",
+    category: "AI Fuzzing Tool",
+    description: "Advanced fuzzing framework enhanced with machine learning for automated vulnerability discovery.",
+    link: "https://aflplus.plus",
+    use_cases: ["Security testing", "Vulnerability research", "Software testing", "Code quality assurance"]
+  },
+  {
+    name: "Cerebras",
+    category: "AI Infrastructure Platform",
+    description: "High-performance AI computing platform optimized for large-scale machine learning workloads.",
+    link: "https://www.cerebras.net",
+    use_cases: ["Large model training", "AI research", "High-performance computing", "Enterprise AI"]
+  },
+  {
+    name: "Groq",
+    category: "AI Inference Platform",
+    description: "Ultra-fast AI inference platform designed for real-time AI applications and high-throughput workloads.",
+    link: "https://groq.com",
+    use_cases: ["Real-time AI inference", "High-speed processing", "Edge computing", "AI acceleration"]
+  },
+  {
+    name: "Darktrace",
+    category: "AI Cybersecurity",
+    description: "AI-powered cybersecurity platform that uses machine learning to detect and respond to threats.",
+    link: "https://darktrace.com",
+    use_cases: ["Threat detection", "Network security", "Anomaly detection", "Cyber defense"]
+  },
+  {
+    name: "CrowdStrike Falcon",
+    category: "AI Endpoint Security",
+    description: "AI-driven endpoint protection platform with behavioral analysis and threat hunting.",
+    link: "https://www.crowdstrike.com",
+    use_cases: ["Endpoint protection", "Threat hunting", "Incident response", "Security monitoring"]
+  },
+  {
+    name: "Cylance",
+    category: "AI Malware Detection",
+    description: "AI-based malware detection and prevention using machine learning algorithms.",
+    link: "https://www.blackberry.com/us/en/products/cylance-endpoint-security",
+    use_cases: ["Malware detection", "Threat prevention", "Endpoint security", "Zero-day protection"]
+  },
+  {
+    name: "Vectra AI",
+    category: "AI Network Security",
+    description: "AI platform for network detection and response, identifying attacker behaviors in real-time.",
+    link: "https://www.vectra.ai",
+    use_cases: ["Network monitoring", "Threat detection", "Attack investigation", "Security analytics"]
   }
 ];
 
