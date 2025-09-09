@@ -223,6 +223,111 @@ export const aiSolutions = [
     description: "AI-powered search and conversational assistant integrated with Bing.",
     link: "https://www.bing.com/chat",
     use_cases: ["Web search", "Research assistance", "Creative writing", "Code help"]
+  },
+  {
+    name: "DALL-E 3",
+    category: "AI Image Generation",
+    description: "OpenAI's most advanced AI image generator with precise prompt following and high-quality outputs.",
+    link: "https://openai.com/dall-e-3",
+    use_cases: ["Creative artwork", "Marketing visuals", "Concept design", "Social media content"]
+  },
+  {
+    name: "Stable Diffusion",
+    category: "AI Image Generation",
+    description: "Open-source AI image generator with high-resolution outputs and extensive customization options.",
+    link: "https://stability.ai/stable-diffusion",
+    use_cases: ["Professional artwork", "Custom models", "High-res images", "Open-source projects"]
+  },
+  {
+    name: "Adobe Firefly",
+    category: "AI Design Tool",
+    description: "Adobe's AI-powered creative suite for commercial-ready image generation and design.",
+    link: "https://firefly.adobe.com",
+    use_cases: ["Commercial design", "Adobe integration", "Professional graphics", "Brand assets"]
+  },
+  {
+    name: "ElevenLabs",
+    category: "AI Voice Generation",
+    description: "Leading AI voice synthesis platform with realistic voice cloning and text-to-speech.",
+    link: "https://elevenlabs.io",
+    use_cases: ["Voice cloning", "Audiobooks", "Podcasts", "Voiceovers"]
+  },
+  {
+    name: "Murf AI",
+    category: "AI Voice Generation",
+    description: "Professional AI voice generator for creating realistic voiceovers and narrations.",
+    link: "https://murf.ai",
+    use_cases: ["Professional voiceovers", "E-learning", "Presentations", "Marketing videos"]
+  },
+  {
+    name: "Canva Magic Studio",
+    category: "AI Design Tool",
+    description: "AI-powered graphic design tools integrated into Canva's popular design platform.",
+    link: "https://www.canva.com/magic-studio/",
+    use_cases: ["Social media graphics", "Presentations", "Marketing materials", "Quick designs"]
+  },
+  {
+    name: "Google Gemini",
+    category: "Conversational AI",
+    description: "Google's multimodal AI assistant capable of understanding text, images, audio, and video.",
+    link: "https://gemini.google.com",
+    use_cases: ["Multimodal analysis", "Creative writing", "Code assistance", "Research help"]
+  },
+  {
+    name: "Anthropic Claude",
+    category: "Conversational AI",
+    description: "Advanced AI assistant focused on helpful, harmless, and honest interactions.",
+    link: "https://claude.ai",
+    use_cases: ["Complex reasoning", "Writing assistance", "Research analysis", "Code review"]
+  },
+  {
+    name: "Speechify",
+    category: "AI Text-to-Speech",
+    description: "AI-powered text-to-speech tool for converting written content to natural audio.",
+    link: "https://speechify.com",
+    use_cases: ["Accessibility", "Learning", "Multitasking", "Content consumption"]
+  },
+  {
+    name: "DeepL",
+    category: "AI Translation",
+    description: "Advanced AI translator providing highly accurate translations across multiple languages.",
+    link: "https://www.deepl.com",
+    use_cases: ["Document translation", "Business communication", "Language learning", "Global content"]
+  },
+  {
+    name: "Topaz AI",
+    category: "AI Photo Enhancement",
+    description: "AI-powered photo and video enhancement tools for upscaling and quality improvement.",
+    link: "https://www.topazlabs.com",
+    use_cases: ["Photo upscaling", "Noise reduction", "Video enhancement", "Professional editing"]
+  },
+  {
+    name: "Zapier AI",
+    category: "AI Automation",
+    description: "AI-powered workflow automation connecting thousands of apps and services.",
+    link: "https://zapier.com/ai",
+    use_cases: ["Workflow automation", "App integration", "Business processes", "Task automation"]
+  },
+  {
+    name: "Pika Labs",
+    category: "AI Video Generation",
+    description: "AI video generator creating short videos from text prompts and images.",
+    link: "https://pika.art",
+    use_cases: ["Short video creation", "Social media content", "Creative projects", "Video prototyping"]
+  },
+  {
+    name: "Gamma",
+    category: "AI Presentation Tool",
+    description: "AI-powered presentation creator that generates slides from simple text prompts.",
+    link: "https://gamma.app",
+    use_cases: ["Quick presentations", "Pitch decks", "Educational content", "Business reports"]
+  },
+  {
+    name: "Fathom",
+    category: "AI Meeting Assistant",
+    description: "AI meeting recorder and note-taker that summarizes calls automatically.",
+    link: "https://fathom.video",
+    use_cases: ["Meeting summaries", "Call recording", "Team collaboration", "CRM integration"]
   }
 ];
 
