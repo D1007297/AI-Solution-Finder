@@ -59,11 +59,15 @@ Always return exactly 2-3 recommendations ranked by relevance."""
             # Initialize chat with unique session ID
             session_id = f"recommendation_{hash(problem_statement) % 1000000}"
             
+            # Create chat instance with proper error handling
             chat = LlmChat(
                 api_key=self.api_key,
-                session_id=session_id,
+                session_id=session_id,  
                 system_message=self.system_message
-            ).with_model("openai", "gpt-4o-mini")
+            )
+            
+            # Set the model to use OpenAI GPT-4o-mini
+            chat = chat.with_model("openai", "gpt-4o-mini")
 
             # Create user message with context
             user_prompt = self._create_analysis_prompt(
