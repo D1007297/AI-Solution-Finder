@@ -662,6 +662,48 @@ export const mockAIRecommendation = (problemStatement) => {
       context: ['enterprise', 'business', 'scale', 'team'],
       solutions: ['Azure OpenAI Service', 'Microsoft Power Platform AI', 'Claude Pro'],
       priority: 'enterprise_solution'
+    },
+    
+    // Travel & Tourism Context
+    {
+      context: ['travel', 'trip', 'vacation', 'holiday', 'tourism'],
+      solutions: ['Google Travel', 'TripAdvisor', 'Expedia'],
+      priority: 'travel_planning'
+    },
+    {
+      context: ['hotel', 'accommodation', 'stay', 'booking'],
+      solutions: ['Booking.com AI', 'Expedia', 'Airbnb'],
+      priority: 'accommodation_booking'
+    },
+    {
+      context: ['flight', 'airline', 'airport', 'flying'],
+      solutions: ['Kayak', 'Hopper', 'Expedia'],
+      priority: 'flight_booking'
+    },
+    {
+      context: ['itinerary', 'plan', 'organize', 'schedule'],
+      solutions: ['TripIt', 'Google Travel', 'Rome2Rio'],
+      priority: 'trip_organization'
+    },
+    {
+      context: ['destination', 'place', 'visit', 'roaming', 'explore'],
+      solutions: ['Google Travel', 'TripAdvisor', 'Rome2Rio'],
+      priority: 'destination_research'
+    },
+    {
+      context: ['restaurant', 'food', 'dining', 'eat'],
+      solutions: ['TripAdvisor', 'Google Travel', 'Booking.com AI'],
+      priority: 'dining_recommendations'
+    },
+    {
+      context: ['attraction', 'sightseeing', 'activity', 'tour'],
+      solutions: ['TripAdvisor', 'Google Travel', 'Expedia'],
+      priority: 'activity_planning'
+    },
+    {
+      context: ['price', 'deal', 'cheap', 'budget', 'cost'],
+      solutions: ['Hopper', 'Kayak', 'Rome2Rio'],
+      priority: 'budget_travel'
     }
   ];
 
