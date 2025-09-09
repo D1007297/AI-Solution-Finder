@@ -419,31 +419,60 @@ export const mockAIRecommendation = (problemStatement) => {
     matchedSolutions = ['ChatGPT'];
   }
 
-  // Get the first matching solution
-  const solutionName = matchedSolutions[0];
-  const solution = aiSolutions.find(sol => sol.name === solutionName);
+  // Get top 2-3 matching solutions
+  const topSolutions = matchedSolutions.slice(0, 3);
+  const recommendedSolutions = topSolutions.map(solutionName => {
+    return aiSolutions.find(sol => sol.name === solutionName);
+  }).filter(Boolean); // Remove any undefined solutions
 
   // Generate explanation based on problem keywords
-  const generateExplanation = (problem, solution) => {
+  const generateExplanation = (problem, solution, rank) => {
     const explanations = {
-      'video': `Based on your need for video-related solutions, ${solution.name} excels at creating professional video content without requiring technical expertise. It's perfect for businesses looking to scale their video production efficiently.`,
-      'writing': `Your writing needs align perfectly with ${solution.name}'s capabilities. It can help you create high-quality content while maintaining your unique voice and meeting your specific requirements.`,
-      'image': `For visual content creation, ${solution.name} stands out as the premier choice. It can generate stunning, creative visuals that match your artistic vision and professional needs.`,
-      'code': `${solution.name} is ideal for your development needs. It understands code context and can significantly boost your productivity by providing intelligent suggestions and automating repetitive tasks.`,
-      'meeting': `${solution.name} is perfect for optimizing your meeting workflow. It captures important discussions and converts them into actionable insights, saving you time and improving team collaboration.`
+      'video': [
+        `Based on your video creation needs, ${solution.name} is our top recommendation. It excels at creating professional video content without requiring technical expertise, making it perfect for scaling your video production efficiently.`,
+        `${solution.name} is another excellent choice for video creation. It offers unique features that complement your video production workflow and provides great value for creative projects.`,
+        `For additional video options, ${solution.name} provides specialized capabilities that might perfectly match your specific video creation requirements.`
+      ],
+      'writing': [
+        `Your writing needs align perfectly with ${solution.name}'s capabilities. It can help you create high-quality content while maintaining your unique voice and meeting your specific requirements.`,
+        `As a secondary option, ${solution.name} offers complementary writing features that can enhance your content creation process with different strengths and approaches.`,
+        `${solution.name} rounds out our writing recommendations with specialized features that might suit particular aspects of your writing workflow.`
+      ],
+      'image': [
+        `For visual content creation, ${solution.name} stands out as our premier recommendation. It can generate stunning, creative visuals that match your artistic vision and professional needs.`,
+        `${solution.name} offers a different approach to image generation with unique styling capabilities that complement our top choice perfectly.`,
+        `As an additional option, ${solution.name} provides specialized image generation features that might align with your specific creative requirements.`
+      ],
+      'code': [
+        `${solution.name} is our top recommendation for your development needs. It understands code context exceptionally well and can significantly boost your productivity through intelligent suggestions.`,
+        `${solution.name} provides complementary coding assistance with different strengths that can enhance your development workflow alongside our primary recommendation.`,
+        `For additional coding support, ${solution.name} offers specialized features that might perfectly match your specific programming requirements.`
+      ],
+      'meeting': [
+        `${solution.name} is perfect for optimizing your meeting workflow. It excels at capturing important discussions and converting them into actionable insights, saving you time and improving collaboration.`,
+        `${solution.name} offers additional meeting enhancement features that complement our top choice with different strengths in organization and productivity.`,
+        `As another meeting solution option, ${solution.name} provides specialized capabilities that might suit your particular collaboration and documentation needs.`
+      ]
     };
 
-    for (const [keyword, explanation] of Object.entries(explanations)) {
+    for (const [keyword, explanationArray] of Object.entries(explanations)) {
       if (problem.includes(keyword)) {
-        return explanation;
+        return explanationArray[rank - 1] || explanationArray[0];
       }
     }
 
-    return `${solution.name} is an excellent general-purpose AI solution that can adapt to various needs. Its versatility and user-friendly interface make it perfect for tackling diverse challenges like yours.`;
+    const defaultExplanations = [
+      `${solution.name} is our top recommendation for your needs. It's an excellent AI solution that can adapt to various requirements with its versatility and user-friendly interface.`,
+      `${solution.name} offers complementary features that can enhance your workflow with different strengths and capabilities.`,
+      `As an additional option, ${solution.name} provides specialized features that might perfectly match your specific requirements.`
+    ];
+
+    return defaultExplanations[rank - 1] || defaultExplanations[0];
   };
 
-  return {
+  return recommendedSolutions.map((solution, index) => ({
     ...solution,
-    explanation: generateExplanation(problem, solution)
-  };
+    explanation: generateExplanation(problem, solution, index + 1),
+    rank: index + 1
+  }));
 };
