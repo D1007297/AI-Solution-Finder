@@ -1,3 +1,5 @@
+from typing import List
+
 # AI Solutions Dataset - Comprehensive list of 115+ AI tools
 AI_SOLUTIONS_DATASET = [
     {
