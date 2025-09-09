@@ -491,7 +491,7 @@ export const aiSolutions = [
     use_cases: ["Hotel search", "Accommodation booking", "Review analysis", "Location recommendations"]
   },
   {
-    name = "Airbnb",
+    name: "Airbnb",
     category: "AI Travel Accommodation",
     description: "AI-powered platform for finding unique accommodations with personalized search and recommendations.",
     link: "https://www.airbnb.com",
