@@ -10,7 +10,7 @@ import { mockAIRecommendation } from '../data/mockData';
 const HomePage = () => {
   const [problemStatement, setProblemStatement] = useState('');
   const [isSearching, setIsSearching] = useState(false);
-  const [recommendation, setRecommendation] = useState(null);
+  const [recommendations, setRecommendations] = useState([]);
   const [feedback, setFeedback] = useState(null);
   const { toast } = useToast();
 
