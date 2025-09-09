@@ -659,23 +659,48 @@ export const mockAIRecommendation = (problemStatement) => {
     // General AI Assistant Context
     {
       context: ['assistant', 'help', 'general', 'conversation', 'chat'],
-      solutions: ['ChatGPT', 'Google Gemini', 'Claude Pro'],
+      solutions: ['ChatGPT', 'Google Gemini', 'Claude Pro', 'Meta AI'],
       priority: 'general_assistant'
     },
     {
       context: ['question', 'answer', 'learn', 'explain', 'understand'],
-      solutions: ['ChatGPT', 'Google Gemini', 'Perplexity AI'],
+      solutions: ['ChatGPT', 'Google Gemini', 'Perplexity AI', 'Meta AI'],
       priority: 'question_answering'
     },
     {
       context: ['brainstorm', 'idea', 'creative', 'thinking'],
-      solutions: ['ChatGPT', 'Claude Pro', 'Google Gemini'],
+      solutions: ['ChatGPT', 'Claude Pro', 'Google Gemini', 'Meta AI'],
       priority: 'brainstorming'
     },
     {
       context: ['openai', 'gpt'],
       solutions: ['ChatGPT', 'DALL-E 3'],
       priority: 'openai_tools'
+    },
+    {
+      context: ['meta', 'facebook', 'instagram', 'whatsapp'],
+      solutions: ['Meta AI', 'ChatGPT', 'Google Gemini'],
+      priority: 'meta_ecosystem'
+    },
+    {
+      context: ['twitter', 'x', 'social', 'news', 'current'],
+      solutions: ['Grok', 'Perplexity AI', 'Meta AI'],
+      priority: 'social_current_events'
+    },
+    {
+      context: ['multiple', 'compare', 'different', 'various'],
+      solutions: ['Poe by Quora', 'ChatGPT', 'Claude Pro'],
+      priority: 'multi_ai_access'
+    },
+    {
+      context: ['personal', 'support', 'emotional', 'empathy'],
+      solutions: ['Pi AI', 'Claude Pro', 'Meta AI'],
+      priority: 'personal_support'
+    },
+    {
+      context: ['character', 'roleplay', 'entertainment', 'fun'],
+      solutions: ['Character.AI', 'ChatGPT', 'Meta AI'],
+      priority: 'entertainment_chat'
     },
     
     // Writing Context
