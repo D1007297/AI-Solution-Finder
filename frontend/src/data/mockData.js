@@ -1256,9 +1256,19 @@ export const mockAIRecommendation = (problemStatement) => {
     
     // DevOps & Infrastructure Context
     {
-      context: ['infrastructure', 'terraform', 'cloudformation', 'iac', 'code', 'best', 'create'],
+      context: ['infrastructure', 'terraform', 'cloudformation', 'iac'],
       solutions: ['AIaC', 'GitHub Copilot', 'Amazon CodeWhisperer'],
       priority: 'infrastructure_as_code'
+    },
+    {
+      context: ['best', 'ai', 'tool', 'infrastructure', 'code'],
+      solutions: ['AIaC', 'Amazon CodeWhisperer', 'GitHub Copilot'],
+      priority: 'best_iac_tools'
+    },
+    {
+      context: ['create', 'infrastructure', 'code'],
+      solutions: ['AIaC', 'GitHub Copilot', 'Amazon CodeWhisperer'],
+      priority: 'create_infrastructure'
     },
     {
       context: ['devops', 'deployment', 'pipeline', 'cicd'],
