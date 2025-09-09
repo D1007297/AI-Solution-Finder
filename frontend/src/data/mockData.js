@@ -316,6 +316,20 @@ export const aiSolutions = [
     use_cases: ["Short video creation", "Social media content", "Creative projects", "Video prototyping"]
   },
   {
+    name: "Runway ML Free",
+    category: "AI Video Generation",
+    description: "Free tier of Runway ML for AI video generation, image-to-video, and creative editing.",
+    link: "https://runwayml.com",
+    use_cases: ["Free video generation", "Creative experiments", "Short clips", "AI effects"]
+  },
+  {
+    name: "Leonardo AI Video",
+    category: "AI Video Generation", 
+    description: "Free AI video generation tool with motion effects for images and creative content.",
+    link: "https://leonardo.ai",
+    use_cases: ["Free video creation", "Image animation", "Creative projects", "Social media"]
+  },
+  {
     name: "Gamma",
     category: "AI Presentation Tool",
     description: "AI-powered presentation creator that generates slides from simple text prompts.",
