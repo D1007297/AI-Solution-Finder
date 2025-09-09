@@ -642,18 +642,33 @@ export const mockAIRecommendation = (problemStatement) => {
     // Image Generation Context
     {
       context: ['image', 'art', 'creative', 'artistic'],
-      solutions: ['MidJourney', 'DALL-E 3', 'Stable Diffusion'],
+      solutions: ['MidJourney', 'Leonardo.ai', 'DALL-E 3'],
       priority: 'artistic_image'
     },
     {
       context: ['image', 'marketing', 'commercial', 'business'],
-      solutions: ['Adobe Firefly', 'Jasper Art', 'Canva Magic Studio'],
+      solutions: ['Adobe Firefly', 'Leonardo.ai', 'Canva Magic Studio'],
       priority: 'commercial_image'
     },
     {
       context: ['logo', 'brand', 'identity', 'business'],
-      solutions: ['Brandmark', 'Adobe Firefly', 'Canva Magic Studio'],
+      solutions: ['Brandmark', 'Ideogram', 'Adobe Firefly'],
       priority: 'branding'
+    },
+    {
+      context: ['text', 'typography', 'font', 'render'],
+      solutions: ['Ideogram', 'Leonardo.ai', 'Adobe Firefly'],
+      priority: 'text_in_images'
+    },
+    {
+      context: ['game', 'asset', 'concept', 'professional'],
+      solutions: ['Leonardo.ai', 'MidJourney', 'Stable Diffusion'],
+      priority: 'game_art'
+    },
+    {
+      context: ['open', 'source', 'free', 'flexible'],
+      solutions: ['Flux AI', 'Stable Diffusion', 'Leonardo.ai'],
+      priority: 'open_source_art'
     },
     
     // General AI Assistant Context
