@@ -450,87 +450,224 @@ export const aiSolutions = [
   }
 ];
 
-// Mock AI recommendation function
+// Advanced AI recommendation function with deep analysis
 export const mockAIRecommendation = (problemStatement) => {
-  // Simple keyword matching for mock functionality
   const problem = problemStatement.toLowerCase();
   
-  // Define keyword mappings with free alternatives first for video
-  const keywordMappings = {
-    'video': ['Runway ML Free', 'Leonardo AI Video', 'Pika Labs', 'Lumen5', 'Pictory', 'Runway ML', 'Synthesia'],
-    'writing': ['ChatGPT', 'Jasper AI', 'Grammarly', 'Copy.ai', 'Writesonic', 'Anthropic Claude'],
-    'image': ['MidJourney', 'DALL-E 3', 'Stable Diffusion', 'Adobe Firefly', 'Microsoft Designer', 'Canva Magic Studio'],
-    'photo': ['Topaz AI', 'Adobe Firefly', 'Canva Magic Studio'],
-    'voice': ['ElevenLabs', 'Murf AI', 'Speechify'],
-    'audio': ['ElevenLabs', 'Murf AI', 'Speechify', 'Soundraw'],
-    'code': ['GitHub Copilot', 'Tabnine', 'Caktus AI', 'Google Gemini'],
-    'meeting': ['Otter.ai', 'Fireflies.ai', 'Microsoft Copilot', 'Fathom'],
-    'presentation': ['Beautiful.ai', 'Microsoft Copilot', 'Microsoft Designer', 'Gamma'],
-    'music': ['Soundraw'],
-    'website': ['Framer AI'],
-    'research': ['Perplexity AI', 'Microsoft Bing Chat', 'Google Gemini', 'Anthropic Claude'],
-    'productivity': ['Notion AI', 'Microsoft Copilot', 'Zapier AI'],
-    'design': ['Adobe Firefly', 'Canva Magic Studio', 'Microsoft Designer', 'Stable Diffusion'],
-    'office': ['Microsoft Copilot', 'Microsoft Copilot Pro'],
-    'microsoft': ['Microsoft Copilot', 'Microsoft Designer', 'Microsoft Bing Chat'],
-    'excel': ['Microsoft Copilot', 'Microsoft Copilot Pro'],
-    'powerpoint': ['Microsoft Copilot', 'Microsoft Designer', 'Gamma'],
-    'word': ['Microsoft Copilot', 'Grammarly'],
-    'outlook': ['Microsoft Copilot', 'Microsoft Viva Sales'],
-    'teams': ['Microsoft Copilot'],
-    'sales': ['Microsoft Viva Sales'],
-    'crm': ['Microsoft Viva Sales'],
-    'enterprise': ['Azure OpenAI Service', 'Microsoft Power Platform AI'],
-    'automation': ['Microsoft Power Platform AI', 'Zapier AI'],
-    'search': ['Microsoft Bing Chat', 'Perplexity AI', 'Google Gemini'],
-    'translation': ['DeepL'],
-    'multimodal': ['Google Gemini'],
-    'openai': ['ChatGPT', 'DALL-E 3'],
-    'google': ['Google Gemini', 'Google Bard'],
-    'adobe': ['Adobe Firefly'],
-    'canva': ['Canva Magic Studio'],
-    'enhance': ['Topaz AI'],
-    'upscale': ['Topaz AI'],
-    'diagram': ['Eraser.io'],
-    'visio': ['Eraser.io'],
-    'architecture': ['Eraser.io'],
-    'cloud': ['Eraser.io'],
-    'system': ['Eraser.io'],
-    'technical': ['Eraser.io', 'GitHub Copilot'],
-    'infrastructure': ['Eraser.io'],
-    'flowchart': ['Eraser.io'],
-    'wireframe': ['Eraser.io']
-  };
+  // Context-aware solution mapping with scoring
+  const contextualAnalysis = [
+    // Video Creation Context
+    {
+      context: ['video', 'marketing', 'campaign', 'promotional'],
+      solutions: ['Synthesia', 'Lumen5', 'Pictory'],
+      priority: 'marketing_video'
+    },
+    {
+      context: ['video', 'free', 'budget', 'startup'],
+      solutions: ['Runway ML Free', 'Leonardo AI Video', 'Pika Labs'],
+      priority: 'free_video'
+    },
+    {
+      context: ['video', 'editing', 'podcast', 'audio'],
+      solutions: ['Descript', 'Runway ML', 'Pictory'],
+      priority: 'video_editing'
+    },
+    {
+      context: ['video', 'avatar', 'personalized', 'training'],
+      solutions: ['Synthesia', 'Rephrase.ai', 'Descript'],
+      priority: 'avatar_video'
+    },
+    
+    // Image Generation Context
+    {
+      context: ['image', 'art', 'creative', 'artistic'],
+      solutions: ['MidJourney', 'DALL-E 3', 'Stable Diffusion'],
+      priority: 'artistic_image'
+    },
+    {
+      context: ['image', 'marketing', 'commercial', 'business'],
+      solutions: ['Adobe Firefly', 'Jasper Art', 'Canva Magic Studio'],
+      priority: 'commercial_image'
+    },
+    {
+      context: ['logo', 'brand', 'identity', 'business'],
+      solutions: ['Brandmark', 'Adobe Firefly', 'Canva Magic Studio'],
+      priority: 'branding'
+    },
+    
+    // Writing Context
+    {
+      context: ['write', 'book', 'novel', 'story', 'creative'],
+      solutions: ['Lex', 'Scrivener + AI', 'Claude Pro'],
+      priority: 'creative_writing'
+    },
+    {
+      context: ['write', 'blog', 'content', 'marketing', 'seo'],
+      solutions: ['Jasper AI', 'Writesonic', 'Rytr'],
+      priority: 'content_marketing'
+    },
+    {
+      context: ['write', 'academic', 'research', 'paper', 'thesis'],
+      solutions: ['Scrivener + AI', 'Grammarly', 'Claude Pro'],
+      priority: 'academic_writing'
+    },
+    {
+      context: ['write', 'copy', 'ad', 'sales', 'marketing'],
+      solutions: ['Copy.ai', 'Jasper AI', 'Writesonic'],
+      priority: 'copywriting'
+    },
+    
+    // Code Development Context
+    {
+      context: ['code', 'programming', 'development', 'software'],
+      solutions: ['GitHub Copilot', 'Cursor AI', 'Replit Ghostwriter'],
+      priority: 'coding'
+    },
+    {
+      context: ['code', 'learning', 'beginner', 'tutorial'],
+      solutions: ['Replit Ghostwriter', 'Caktus AI', 'GitHub Copilot'],
+      priority: 'code_learning'
+    },
+    
+    // Research Context
+    {
+      context: ['research', 'academic', 'study', 'analysis'],
+      solutions: ['Perplexity Pro', 'Claude Pro', 'Google Gemini'],
+      priority: 'academic_research'
+    },
+    {
+      context: ['research', 'market', 'business', 'competitive'],
+      solutions: ['Perplexity AI', 'Claude Pro', 'Microsoft Bing Chat'],
+      priority: 'market_research'
+    },
+    
+    // Design & Diagrams Context
+    {
+      context: ['diagram', 'architecture', 'system', 'technical'],
+      solutions: ['Eraser.io', 'Microsoft Designer', 'Canva Magic Studio'],
+      priority: 'technical_design'
+    },
+    {
+      context: ['visio', 'flowchart', 'process', 'workflow'],
+      solutions: ['Eraser.io', 'Microsoft Designer', 'Canva Magic Studio'],
+      priority: 'process_design'
+    },
+    
+    // Presentation Context
+    {
+      context: ['presentation', 'pitch', 'slides', 'deck'],
+      solutions: ['Gamma', 'Tome', 'Beautiful.ai'],
+      priority: 'presentations'
+    },
+    {
+      context: ['presentation', 'story', 'narrative', 'engaging'],
+      solutions: ['Tome', 'Gamma', 'Beautiful.ai'],
+      priority: 'story_presentation'
+    },
+    
+    // Music & Audio Context
+    {
+      context: ['music', 'soundtrack', 'background', 'royalty'],
+      solutions: ['Soundraw', 'Soundful', 'AIVA'],
+      priority: 'background_music'
+    },
+    {
+      context: ['music', 'compose', 'original', 'film', 'game'],
+      solutions: ['AIVA', 'Soundful', 'Soundraw'],
+      priority: 'music_composition'
+    },
+    {
+      context: ['voice', 'speech', 'narration', 'audiobook'],
+      solutions: ['ElevenLabs', 'Murf AI', 'Speechify'],
+      priority: 'voice_generation'
+    },
+    
+    // Office & Productivity Context
+    {
+      context: ['excel', 'spreadsheet', 'data', 'analysis'],
+      solutions: ['Microsoft Copilot Pro', 'Microsoft Copilot', 'Google Gemini'],
+      priority: 'data_analysis'
+    },
+    {
+      context: ['meeting', 'notes', 'transcription', 'summary'],
+      solutions: ['Otter.ai', 'Fathom', 'Fireflies.ai'],
+      priority: 'meeting_assistance'
+    },
+    
+    // Enterprise Context
+    {
+      context: ['enterprise', 'business', 'scale', 'team'],
+      solutions: ['Azure OpenAI Service', 'Microsoft Power Platform AI', 'Claude Pro'],
+      priority: 'enterprise_solution'
+    }
+  ];
 
-  // Check for exclusions (like "not Synthesia")
-  const excludedSolutions = [];
-  if (problem.includes('not synthesia') || problem.includes('no synthesia')) {
-    excludedSolutions.push('Synthesia');
-  }
+  // Analyze problem statement for context matches
+  let bestMatches = [];
+  
+  contextualAnalysis.forEach(analysis => {
+    let score = 0;
+    let matchedKeywords = [];
+    
+    analysis.context.forEach(keyword => {
+      if (problem.includes(keyword)) {
+        score++;
+        matchedKeywords.push(keyword);
+      }
+    });
+    
+    if (score > 0) {
+      bestMatches.push({
+        ...analysis,
+        score,
+        matchedKeywords
+      });
+    }
+  });
 
-  // Find matching solutions
-  let matchedSolutions = [];
-  for (const [keyword, solutions] of Object.entries(keywordMappings)) {
-    if (problem.includes(keyword)) {
-      matchedSolutions = solutions.filter(solution => !excludedSolutions.includes(solution));
-      break;
+  // Sort by score (most relevant first)
+  bestMatches.sort((a, b) => b.score - a.score);
+
+  // Handle exclusions
+  const exclusions = [];
+  if (problem.includes('not synthesia') || problem.includes('no synthesia')) exclusions.push('Synthesia');
+  if (problem.includes('not chatgpt') || problem.includes('no chatgpt')) exclusions.push('ChatGPT');
+
+  // Get final recommendations
+  let finalSolutions = [];
+  
+  if (bestMatches.length > 0) {
+    // Take solutions from top matches
+    const topMatch = bestMatches[0];
+    finalSolutions = [...topMatch.solutions];
+    
+    // Add solutions from second best match if different priority
+    if (bestMatches.length > 1 && bestMatches[1].priority !== topMatch.priority) {
+      finalSolutions = [...finalSolutions, ...bestMatches[1].solutions];
     }
   }
 
-  // Prioritize free solutions if "free" is mentioned
-  if (problem.includes('free') && matchedSolutions.length > 0) {
-    const freeSolutions = matchedSolutions.filter(sol => 
+  // Filter out exclusions and duplicates
+  finalSolutions = [...new Set(finalSolutions)].filter(sol => !exclusions.includes(sol));
+
+  // Handle free preference
+  if (problem.includes('free') && finalSolutions.length > 0) {
+    const freeSolutions = finalSolutions.filter(sol => 
       sol.includes('Free') || 
-      ['ChatGPT', 'Google Gemini', 'Google Bard', 'Leonardo AI Video', 'Runway ML Free', 'Pika Labs'].includes(sol)
+      ['Google Gemini', 'Google Bard', 'Leonardo AI Video', 'Runway ML Free', 'Pika Labs', 'Canva Magic Studio'].includes(sol)
     );
     if (freeSolutions.length > 0) {
-      matchedSolutions = freeSolutions;
+      finalSolutions = freeSolutions.concat(finalSolutions.filter(sol => !freeSolutions.includes(sol)));
     }
   }
 
-  // Default to ChatGPT if no specific match
-  if (matchedSolutions.length === 0) {
-    matchedSolutions = ['ChatGPT'];
+  // If no matches found, provide contextual fallback based on problem type
+  if (finalSolutions.length === 0) {
+    if (problem.includes('write')) finalSolutions = ['Jasper AI', 'Claude Pro', 'Grammarly'];
+    else if (problem.includes('image') || problem.includes('visual')) finalSolutions = ['DALL-E 3', 'MidJourney', 'Adobe Firefly'];
+    else if (problem.includes('data') || problem.includes('analysis')) finalSolutions = ['Claude Pro', 'Perplexity Pro', 'Google Gemini'];
+    else if (problem.includes('business') || problem.includes('professional')) finalSolutions = ['Claude Pro', 'Microsoft Copilot', 'Perplexity Pro'];
+    else finalSolutions = ['Google Gemini', 'Claude Pro', 'Perplexity AI']; // Intelligent general-purpose fallback
   }
 
   // Get top 2-3 matching solutions
