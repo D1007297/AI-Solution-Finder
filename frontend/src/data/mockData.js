@@ -1108,6 +1108,73 @@ export const mockAIRecommendation = (problemStatement) => {
       context: ['template', 'quick', 'social', 'media'],
       solutions: ['Pixvers AI', 'Animaker', 'ToonMe'],
       priority: 'template_animation'
+    },
+    
+    // Cybersecurity & AI Infrastructure Context
+    {
+      context: ['security', 'cybersecurity', 'threat', 'malware'],
+      solutions: ['Darktrace', 'CrowdStrike Falcon', 'Cylance'],
+      priority: 'cybersecurity_defense'
+    },
+    {
+      context: ['endpoint', 'protection', 'malware', 'detection'],
+      solutions: ['CrowdStrike Falcon', 'Cylance', 'Darktrace'],
+      priority: 'endpoint_security'
+    },
+    {
+      context: ['network', 'monitoring', 'anomaly', 'detection'],
+      solutions: ['Vectra AI', 'Darktrace', 'CrowdStrike Falcon'],
+      priority: 'network_security'
+    },
+    {
+      context: ['fuzzing', 'testing', 'vulnerability', 'security'],
+      solutions: ['AFL++', 'Darktrace', 'Vectra AI'],
+      priority: 'security_testing'
+    },
+    {
+      context: ['speech', 'transcription', 'audio', 'whisper'],
+      solutions: ['OpenAI Whisper', 'Speechify', 'Coqui TTS'],
+      priority: 'speech_recognition'
+    },
+    {
+      context: ['voice', 'clone', 'synthesis', 'tts'],
+      solutions: ['Coqui TTS', 'Bark', 'ElevenLabs'],
+      priority: 'voice_synthesis'
+    },
+    {
+      context: ['deepfake', 'face', 'swap', 'synthesis'],
+      solutions: ['DeepFaceLab', 'FaceFusion', 'Adobe Character Animator'],
+      priority: 'face_synthesis'
+    },
+    {
+      context: ['autonomous', 'agent', 'automation', 'workflow'],
+      solutions: ['AutoGPT', 'LangChain', 'Zapier AI'],
+      priority: 'autonomous_agents'
+    },
+    {
+      context: ['framework', 'development', 'langchain', 'application'],
+      solutions: ['LangChain', 'Haystack', 'AutoGPT'],
+      priority: 'ai_frameworks'
+    },
+    {
+      context: ['search', 'document', 'retrieval', 'knowledge'],
+      solutions: ['Haystack', 'Perplexity AI', 'LangChain'],
+      priority: 'knowledge_retrieval'
+    },
+    {
+      context: ['open', 'source', 'llama', 'meta'],
+      solutions: ['LLaMA 2', 'Code Llama', 'DeepFaceLab'],
+      priority: 'open_source_ai'
+    },
+    {
+      context: ['infrastructure', 'compute', 'performance', 'scale'],
+      solutions: ['Cerebras', 'Groq', 'Azure OpenAI Service'],
+      priority: 'ai_infrastructure'
+    },
+    {
+      context: ['inference', 'real', 'time', 'fast'],
+      solutions: ['Groq', 'Cerebras', 'Claude Pro'],
+      priority: 'fast_inference'
     }
   ];
 
