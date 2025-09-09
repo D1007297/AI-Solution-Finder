@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Search, Loader2, ThumbsUp, ThumbsDown, Share2, Bookmark } from 'lucide-react';
 import { useToast } from '../hooks/use-toast';
-import { mockAIRecommendation } from '../data/mockData';
+import axios from 'axios';
+import { v4 as uuidv4 } from 'uuid';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const HomePage = () => {
   const [problemStatement, setProblemStatement] = useState('');
