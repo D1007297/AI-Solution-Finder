@@ -31,13 +31,31 @@ const HomePage = () => {
 
     setIsSearching(true);
     
-    // Mock AI processing delay
-    setTimeout(() => {
-      const results = mockAIRecommendation(problemStatement);
-      setRecommendations(results);
+    try {
+      const response = await axios.post(`${API}/recommend`, {
+        problem_statement: problemStatement,
+        excluded_solutions: [],
+        user_preferences: {}
+      });
+      
+      setRecommendations(response.data);
+      setFeedback({});
+      
+      toast({
+        title: "Recommendations Generated!",
+        description: `Found ${response.data.length} AI solutions for your needs.`,
+      });
+      
+    } catch (error) {
+      console.error('Error getting recommendations:', error);
+      toast({
+        title: "Error",
+        description: "Failed to generate recommendations. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
       setIsSearching(false);
-      setFeedback(null);
-    }, 2000);
+    }
   };
 
   const handleFeedback = (type) => {
