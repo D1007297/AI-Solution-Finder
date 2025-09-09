@@ -20,8 +20,10 @@ const SolutionLibrary = () => {
   // Filter solutions
   const filteredSolutions = useMemo(() => {
     return aiSolutions.filter(solution => {
-      const matchesSearch = solution.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      const matchesSearch = searchTerm === '' || 
+                           solution.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                            solution.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           solution.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
                            solution.use_cases.some(useCase => 
                              useCase.toLowerCase().includes(searchTerm.toLowerCase())
                            );
