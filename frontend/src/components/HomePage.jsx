@@ -198,7 +198,7 @@ const HomePage = () => {
                       </Badge>
                     </div>
                     <div className="flex space-x-2">
-                      <Button size="sm" variant="outline" onClick={handleSave}>
+                      <Button size="sm" variant="outline" onClick={() => handleSave(recommendation.name)}>
                         <Bookmark className="h-4 w-4" />
                       </Button>
                       <Button size="sm" variant="outline" onClick={handleShare}>
