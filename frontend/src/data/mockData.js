@@ -235,14 +235,26 @@ export const mockAIRecommendation = (problemStatement) => {
   const keywordMappings = {
     'video': ['Synthesia', 'Runway ML', 'Pictory', 'Descript', 'Lumen5'],
     'writing': ['ChatGPT', 'Jasper AI', 'Grammarly', 'Copy.ai', 'Writesonic'],
-    'image': ['MidJourney'],
+    'image': ['MidJourney', 'Microsoft Designer'],
     'code': ['GitHub Copilot', 'Tabnine', 'Caktus AI'],
-    'meeting': ['Otter.ai', 'Fireflies.ai'],
-    'presentation': ['Beautiful.ai'],
+    'meeting': ['Otter.ai', 'Fireflies.ai', 'Microsoft Copilot'],
+    'presentation': ['Beautiful.ai', 'Microsoft Copilot', 'Microsoft Designer'],
     'music': ['Soundraw'],
     'website': ['Framer AI'],
-    'research': ['Perplexity AI'],
-    'productivity': ['Notion AI']
+    'research': ['Perplexity AI', 'Microsoft Bing Chat'],
+    'productivity': ['Notion AI', 'Microsoft Copilot'],
+    'office': ['Microsoft Copilot', 'Microsoft Copilot Pro'],
+    'microsoft': ['Microsoft Copilot', 'Microsoft Designer', 'Microsoft Bing Chat'],
+    'excel': ['Microsoft Copilot', 'Microsoft Copilot Pro'],
+    'powerpoint': ['Microsoft Copilot', 'Microsoft Designer'],
+    'word': ['Microsoft Copilot', 'Grammarly'],
+    'outlook': ['Microsoft Copilot', 'Microsoft Viva Sales'],
+    'teams': ['Microsoft Copilot'],
+    'sales': ['Microsoft Viva Sales'],
+    'crm': ['Microsoft Viva Sales'],
+    'enterprise': ['Azure OpenAI Service', 'Microsoft Power Platform AI'],
+    'automation': ['Microsoft Power Platform AI'],
+    'search': ['Microsoft Bing Chat', 'Perplexity AI']
   };
 
   // Find matching solutions
