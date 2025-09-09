@@ -28,8 +28,8 @@ const HomePage = () => {
     
     // Mock AI processing delay
     setTimeout(() => {
-      const result = mockAIRecommendation(problemStatement);
-      setRecommendation(result);
+      const results = mockAIRecommendation(problemStatement);
+      setRecommendations(results);
       setIsSearching(false);
       setFeedback(null);
     }, 2000);
