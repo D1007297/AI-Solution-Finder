@@ -15,7 +15,8 @@ const HomePage = () => {
   const [problemStatement, setProblemStatement] = useState('');
   const [isSearching, setIsSearching] = useState(false);
   const [recommendations, setRecommendations] = useState([]);
-  const [feedback, setFeedback] = useState(null);
+  const [feedback, setFeedback] = useState({});
+  const [sessionId] = useState(() => uuidv4());
   const { toast } = useToast();
 
   const handleSearch = async () => {
