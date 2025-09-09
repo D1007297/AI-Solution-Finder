@@ -338,7 +338,7 @@ export const mockAIRecommendation = (problemStatement) => {
   
   // Define keyword mappings
   const keywordMappings = {
-    'video': ['Synthesia', 'Runway ML', 'Pictory', 'Descript', 'Lumen5', 'Pika Labs'],
+    'video': ['Synthesia', 'Runway ML', 'Pictory', 'Lumen5', 'Pika Labs'],
     'writing': ['ChatGPT', 'Jasper AI', 'Grammarly', 'Copy.ai', 'Writesonic', 'Anthropic Claude'],
     'image': ['MidJourney', 'DALL-E 3', 'Stable Diffusion', 'Adobe Firefly', 'Microsoft Designer', 'Canva Magic Studio'],
     'photo': ['Topaz AI', 'Adobe Firefly', 'Canva Magic Studio'],
