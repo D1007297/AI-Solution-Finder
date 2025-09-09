@@ -558,26 +558,53 @@ export const mockAIRecommendation = (problemStatement) => {
       priority: 'branding'
     },
     
+    // General AI Assistant Context
+    {
+      context: ['assistant', 'help', 'general', 'conversation', 'chat'],
+      solutions: ['ChatGPT', 'Google Gemini', 'Claude Pro'],
+      priority: 'general_assistant'
+    },
+    {
+      context: ['question', 'answer', 'learn', 'explain', 'understand'],
+      solutions: ['ChatGPT', 'Google Gemini', 'Perplexity AI'],
+      priority: 'question_answering'
+    },
+    {
+      context: ['brainstorm', 'idea', 'creative', 'thinking'],
+      solutions: ['ChatGPT', 'Claude Pro', 'Google Gemini'],
+      priority: 'brainstorming'
+    },
+    {
+      context: ['openai', 'gpt'],
+      solutions: ['ChatGPT', 'DALL-E 3'],
+      priority: 'openai_tools'
+    },
+    
     // Writing Context
     {
       context: ['write', 'book', 'novel', 'story', 'creative'],
-      solutions: ['Lex', 'Scrivener + AI', 'Claude Pro'],
+      solutions: ['Lex', 'Scrivener + AI', 'ChatGPT'],
       priority: 'creative_writing'
     },
     {
       context: ['write', 'blog', 'content', 'marketing', 'seo'],
-      solutions: ['Jasper AI', 'Writesonic', 'Rytr'],
+      solutions: ['Jasper AI', 'ChatGPT', 'Writesonic'],
       priority: 'content_marketing'
     },
     {
       context: ['write', 'academic', 'research', 'paper', 'thesis'],
-      solutions: ['Scrivener + AI', 'Grammarly', 'Claude Pro'],
+      solutions: ['Scrivener + AI', 'Claude Pro', 'ChatGPT'],
       priority: 'academic_writing'
     },
     {
       context: ['write', 'copy', 'ad', 'sales', 'marketing'],
-      solutions: ['Copy.ai', 'Jasper AI', 'Writesonic'],
+      solutions: ['Copy.ai', 'Jasper AI', 'ChatGPT'],
       priority: 'copywriting'
+    },
+    {
+      context: ['text', 'generate', 'content', 'create'],
+      solutions: ['ChatGPT', 'Jasper AI', 'Claude Pro'],
+      priority: 'text_generation'
     },
     
     // Code Development Context
