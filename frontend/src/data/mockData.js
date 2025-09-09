@@ -942,6 +942,53 @@ export const mockAIRecommendation = (problemStatement) => {
       context: ['price', 'deal', 'cheap', 'budget', 'cost'],
       solutions: ['Hopper', 'Kayak', 'Rome2Rio'],
       priority: 'budget_travel'
+    },
+    
+    // Cartoon & Animation Context
+    {
+      context: ['cartoon', 'cartoonify', 'toon', 'comic'],
+      solutions: ['ToonMe', 'Cartoonify', 'DoodleLabs AI'],
+      priority: 'cartoon_generation'
+    },
+    {
+      context: ['photo', 'cartoon', 'avatar', 'transform'],
+      solutions: ['ToonMe', 'Cartoonify', 'DoodleLabs AI'],
+      priority: 'photo_to_cartoon'
+    },
+    {
+      context: ['animation', 'animate', 'animated', 'motion'],
+      solutions: ['Adobe Character Animator', 'Reelmind', 'Animaker'],
+      priority: 'animation_creation'
+    },
+    {
+      context: ['real', 'time', 'live', 'webcam', 'stream'],
+      solutions: ['Adobe Character Animator', 'DeepMotion', 'Reelmind'],
+      priority: 'realtime_animation'
+    },
+    {
+      context: ['3d', 'character', 'rigging', 'motion', 'capture'],
+      solutions: ['DeepMotion', 'Adobe Character Animator', 'Reelmind'],
+      priority: '3d_animation'
+    },
+    {
+      context: ['2d', 'style', 'transfer', 'flat'],
+      solutions: ['ToonCrafter', 'Pixvers AI', 'Animaker'],
+      priority: '2d_animation'
+    },
+    {
+      context: ['beginner', 'easy', 'simple', 'quick'],
+      solutions: ['Animaker', 'Pixvers AI', 'ToonMe'],
+      priority: 'beginner_animation'
+    },
+    {
+      context: ['professional', 'production', 'storytelling', 'commercial'],
+      solutions: ['Reelmind', 'Adobe Character Animator', 'DeepMotion'],
+      priority: 'professional_animation'
+    },
+    {
+      context: ['template', 'quick', 'social', 'media'],
+      solutions: ['Pixvers AI', 'Animaker', 'ToonMe'],
+      priority: 'template_animation'
     }
   ];
 
