@@ -350,9 +350,9 @@ export const mockAIRecommendation = (problemStatement) => {
   // Simple keyword matching for mock functionality
   const problem = problemStatement.toLowerCase();
   
-  // Define keyword mappings
+  // Define keyword mappings with free alternatives first for video
   const keywordMappings = {
-    'video': ['Synthesia', 'Runway ML', 'Pictory', 'Lumen5', 'Pika Labs'],
+    'video': ['Runway ML Free', 'Leonardo AI Video', 'Pika Labs', 'Lumen5', 'Pictory', 'Runway ML', 'Synthesia'],
     'writing': ['ChatGPT', 'Jasper AI', 'Grammarly', 'Copy.ai', 'Writesonic', 'Anthropic Claude'],
     'image': ['MidJourney', 'DALL-E 3', 'Stable Diffusion', 'Adobe Firefly', 'Microsoft Designer', 'Canva Magic Studio'],
     'photo': ['Topaz AI', 'Adobe Firefly', 'Canva Magic Studio'],
@@ -388,12 +388,29 @@ export const mockAIRecommendation = (problemStatement) => {
     'upscale': ['Topaz AI']
   };
 
+  // Check for exclusions (like "not Synthesia")
+  const excludedSolutions = [];
+  if (problem.includes('not synthesia') || problem.includes('no synthesia')) {
+    excludedSolutions.push('Synthesia');
+  }
+
   // Find matching solutions
   let matchedSolutions = [];
   for (const [keyword, solutions] of Object.entries(keywordMappings)) {
     if (problem.includes(keyword)) {
-      matchedSolutions = solutions;
+      matchedSolutions = solutions.filter(solution => !excludedSolutions.includes(solution));
       break;
+    }
+  }
+
+  // Prioritize free solutions if "free" is mentioned
+  if (problem.includes('free') && matchedSolutions.length > 0) {
+    const freeSolutions = matchedSolutions.filter(sol => 
+      sol.includes('Free') || 
+      ['ChatGPT', 'Google Gemini', 'Google Bard', 'Leonardo AI Video', 'Runway ML Free', 'Pika Labs'].includes(sol)
+    );
+    if (freeSolutions.length > 0) {
+      matchedSolutions = freeSolutions;
     }
   }
 
