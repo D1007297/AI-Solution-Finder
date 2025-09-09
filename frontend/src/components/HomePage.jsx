@@ -58,28 +58,60 @@ const HomePage = () => {
     }
   };
 
-  const handleFeedback = (type) => {
-    setFeedback(type);
-    toast({
-      title: "Thank you for your feedback!",
-      description: "Your input helps us improve our recommendations.",
-    });
+  const handleFeedback = async (solutionName, type, rank) => {
+    try {
+      await axios.post(`${API}/feedback`, {
+        session_id: sessionId,
+        solution_name: solutionName,
+        feedback_type: type,
+        recommendation_rank: rank,
+        problem_statement: problemStatement
+      });
+      
+      setFeedback(prev => ({ ...prev, [`${solutionName}-${rank}`]: type }));
+      
+      toast({
+        title: "Thank you for your feedback!",
+        description: "Your input helps us improve our recommendations.",
+      });
+    } catch (error) {
+      console.error('Error submitting feedback:', error);
+      toast({
+        title: "Error",
+        description: "Failed to submit feedback.",
+        variant: "destructive"
+      });
+    }
   };
 
-  const handleSave = () => {
-    // Mock save functionality
-    toast({
-      title: "Recommendation saved!",
-      description: "You can find it in your saved solutions.",
-    });
+  const handleSave = async (solutionName) => {
+    try {
+      await axios.post(`${API}/save-solution`, {
+        session_id: sessionId,
+        solution_name: solutionName,
+        problem_statement: problemStatement
+      });
+      
+      toast({
+        title: "Solution saved!",
+        description: "You can find it in your saved solutions.",
+      });
+    } catch (error) {
+      console.error('Error saving solution:', error);
+      toast({
+        title: "Error",
+        description: "Failed to save solution.",
+        variant: "destructive"
+      });
+    }
   };
 
   const handleShare = () => {
-    // Mock share functionality
-    navigator.clipboard.writeText(window.location.href);
+    const shareText = `Check out these AI solutions I found: ${recommendations.map(r => r.name).join(', ')}`;
+    navigator.clipboard.writeText(`${shareText}\n\n${window.location.href}`);
     toast({
       title: "Link copied!",
-      description: "Share this recommendation with others.",
+      description: "Share these recommendations with others.",
     });
   };
 
